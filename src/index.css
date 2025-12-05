@@ -1,0 +1,157 @@
+/* ===========================================
+   🌙 PALETA GLOBAL ZENTRO – DARK TECH
+   =========================================== */
+:root {
+  --zentro-bg: #0d1117;
+  --zentro-bg-soft: #161b22;
+  --zentro-border: #1f2937;
+
+  --zentro-text: #e5ecf5;
+  --zentro-text-soft: #a8b3cf;
+
+  --zentro-primary: #00cfff;
+  --zentro-primary-dark: #009ac0;
+  --zentro-blue: #0066cc;
+
+  --zentro-warning: #ffd43b;
+  --zentro-danger: #ff4e4e;
+
+  --radius: 8px;
+
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: dark;
+  color: var(--zentro-text);
+  background-color: var(--zentro-bg);
+
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ===========================================
+   🔗 LINKS
+   =========================================== */
+a {
+  font-weight: 500;
+  color: var(--zentro-primary);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--zentro-primary-dark);
+}
+
+/* ===========================================
+   🧍 BODY
+   =========================================== */
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: var(--zentro-bg);
+  color: var(--zentro-text);
+}
+
+/* ===========================================
+   🧢 TITULOS
+   =========================================== */
+h1, h2, h3, h4, h5 {
+  color: var(--zentro-primary);
+}
+
+/* ===========================================
+   🔘 BOTONES GLOBAL
+   =========================================== */
+button {
+  border-radius: var(--radius);
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 600;
+  font-family: inherit;
+
+  background-color: var(--zentro-primary);
+  color: #0d1117;
+
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+button:hover {
+  background-color: var(--zentro-primary-dark);
+}
+
+button:focus {
+  outline: 3px solid var(--zentro-primary);
+}
+
+/* Botones secundarios */
+.btn-secondary,
+button.btn-secondary {
+  background: transparent;
+  border: 1px solid var(--zentro-primary);
+  color: var(--zentro-primary);
+}
+.btn-secondary:hover {
+  background: var(--zentro-primary);
+  color: #0d1117;
+}
+
+/* Botones de alerta */
+.btn-warning {
+  background: var(--zentro-warning) !important;
+  color: #111 !important;
+}
+.btn-danger {
+  background: var(--zentro-danger) !important;
+}
+
+/* ===========================================
+   📝 INPUTS Y TEXTAREAS
+   =========================================== */
+input, select, textarea {
+  background: var(--zentro-bg-soft);
+  color: var(--zentro-text);
+  border: 1px solid var(--zentro-border);
+  border-radius: var(--radius);
+  padding: 0.6em;
+}
+input:focus, textarea:focus, select:focus {
+  outline: 2px solid var(--zentro-primary);
+}
+
+/* ===========================================
+   📦 TARJETAS / PANELS
+   =========================================== */
+.card, .panel, form {
+  background: var(--zentro-bg-soft) !important;
+  border: 1px solid var(--zentro-border) !important;
+  color: var(--zentro-text);
+  border-radius: var(--radius);
+}
+
+/* ===========================================
+   📊 TABLAS
+   =========================================== */
+table {
+  color: var(--zentro-text);
+}
+thead {
+  background: var(--zentro-bg) !important;
+}
+tbody tr:hover {
+  background: rgba(0, 207, 255, 0.05);
+}
+
+/* ===========================================
+   ☀️ SI EL USUARIO TIENE MODO CLARO
+   =========================================== */
+@media (prefers-color-scheme: light) {
+  :root {
+    color-scheme: light;
+    background-color: #ffffff;
+    color: #213547;
+  }
+  body {
+    background-color: #ffffff;
+  }
+}
