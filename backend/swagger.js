@@ -6,18 +6,18 @@ const swaggerDefinition = {
   info: {
     title: "Zentro E-Commerce API",
     version: "1.0.0",
-    description: "Documentación interactiva de la API del proyecto Zentro",
+    description: "Documentación completa de la API del proyecto Zentro."
   },
   servers: [
     {
-      url: "http://localhost:3000/api",
-      description: "Servidor local no poner mejor",
+      url: "http://3.208.218.72:3000/api",
+      description: "Servidor EC2 Producción"
     },
     {
-      url: "http://3.208.218.72:300/api",
-      description: "Producción principal",
-    },
-  ],
+      url: "http://localhost:3000/api",
+      description: "Servidor Local"
+    }
+  ]
 };
 
 const options = {
