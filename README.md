@@ -13,7 +13,7 @@ Este proyecto fue desarrollado por:
 
 *   **Demis Zúñiga**
 *   **Gabriel Colmenares**
-*   **Nicolás Tapia**
+*   **José Tapia**
 
 ---
 
